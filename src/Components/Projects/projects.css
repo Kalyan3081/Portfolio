@@ -1,0 +1,172 @@
+.project-page {
+    padding: 20px;
+    /* background-color: #f4f4f4; */
+    min-height: 100vh;
+}
+
+.my-project h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.project-page-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-page-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.project-page-item:hover {
+    transform: translateY(-10px);
+}
+
+.project-page-item-number p {
+    font-size: 1rem;
+    color: #888;
+    margin: 10px 15px;
+}
+
+.project-page-item-header a {
+    margin: 10px;
+    padding-left: 8px;
+    font-style: italic;
+}
+
+.project-page-item-header h1 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 10px 15px;
+}
+
+.project-page-item-header p {
+    font-size: 1rem;
+    color: #555;
+    margin: 10px 15px 15px;
+    line-height: 1.5;
+}
+
+.project-page-item-image {
+    height: 500px;
+    background-color: #ddd;
+    background-size: cover;
+    background-position: center;
+}
+
+.project-page-item-image1 {
+    background-image: url('../../Assets/QuickNest.png');
+}
+
+.project-page-item-footer {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eaeaea;
+}
+
+.project-page-item-footer p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.project-page-item-footer img {
+    height: 20px;
+    width: 20px;
+    transition: transform 0.3s ease;
+}
+
+.project-page-item-footer img:hover {
+    transform: translateX(5px);
+}
+
+.project-page-item a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .my-project h1 {
+        font-size: 2.5rem;
+    }
+
+    .project-page-item {
+        height: 80vh;
+    }
+
+    .project-page-item-header h1 {
+        font-size: 1.3rem;
+    }
+
+    .project-page-item-header p {
+        font-size: 0.9rem;
+    }
+
+    .project-page-item-image {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .my-project h1 {
+        font-size: 2rem;
+    }
+
+    .project-page-item {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .project-page-item-header h1 {
+        font-size: 1.2rem;
+    }
+
+    .project-page-item-header p {
+        font-size: 0.85rem;
+    }
+
+    .project-page-item-image {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-page {
+        padding: 10px;
+    }
+
+    .my-project h1 {
+        font-size: 1.8rem;
+    }
+
+    .project-page-item {
+        height: auto;
+    }
+
+    .project-page-item-header h1 {
+        font-size: 1rem;
+    }
+
+    .project-page-item-header p {
+        font-size: 0.8rem;
+    }
+
+    .project-page-item-image {
+        height: 200px;
+    }
+}
